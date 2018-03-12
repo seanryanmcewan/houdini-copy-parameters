@@ -1,5 +1,9 @@
-# COPIES THE PARAMETERS
 def copy(node1, node2):
+    """ 
+    Copies all of the expressions, keyframes, and values from the parameters of node 1 (first selected node) 
+    to the parameters of node 2 (second selected node), if a parameter with the same name is found.
+    """
+    
     
     # ITERATE OVER ALL PARMS IN NODE1, AND CHECK IF THE PARM EXISTS IN NODE2
     for p in node1.parms():
@@ -25,6 +29,9 @@ def copy(node1, node2):
 
 # CHECKS SELECTED NODE AND SENDS TO COPY FUNCTION                
 def run():
+    """
+    Gets the currently selected nodes and runs the copy function.
+    """
     
     # GET SELECTED NODES
     sel = hou.selectedNodes()
