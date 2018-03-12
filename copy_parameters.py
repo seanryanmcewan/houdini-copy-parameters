@@ -1,4 +1,4 @@
-# FUNCTION WHICH COPIES THE PARAMETERS
+# COPIES THE PARAMETERS
 def copy(node1, node2):
     
     # ITERATE OVER ALL PARMS IN NODE1, AND CHECK IF THE PARM EXISTS IN NODE2
@@ -23,7 +23,7 @@ def copy(node1, node2):
             if p.keyframes():
                 p2.setKeyframes(p.keyframes())
 
-# FUNCTION WHICH CHECKS SELECTED NODE AND SENDS TO COPY FUNCTION                
+# CHECKS SELECTED NODE AND SENDS TO COPY FUNCTION                
 def run():
     
     # GET SELECTED NODES
