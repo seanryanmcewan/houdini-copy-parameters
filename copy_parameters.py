@@ -1,7 +1,10 @@
 def copy(node1, node2):
     """ 
-    Copies all of the expressions, keyframes, and values from the parameters of node 1 (first selected node) 
-    to the parameters of node 2 (second selected node), if a parameter with the same name is found.
+    Copies all of the expressions, keyframes, and values from the parameters of one node to another.
+    
+    Arguments:
+    node1 (hou.Parm): Node to copy parameters from.
+    node2 (hou.Parm): Node to copy parameters to.
     """
     
     
