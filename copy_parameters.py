@@ -3,8 +3,8 @@ def copy(node1, node2):
     Copies all of the expressions, keyframes, and values from the parameters of one node to another.
     
     Arguments:
-    node1 (hou.Parm): Node to copy parameters from.
-    node2 (hou.Parm): Node to copy parameters to.
+        node1 (hou.Parm): Node to copy parameters from.
+        node2 (hou.Parm): Node to copy parameters to.
     """
     
     
