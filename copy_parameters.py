@@ -40,17 +40,13 @@ def run():
     sel = hou.selectedNodes()
     
     # DISPLAY WARNINGS IF TWO NODES ARE NOT SELECTED
-    if len(sel) < 2:
-        hou.ui.displayMessage("Please select two nodes.")
-    if len(sel) > 2:
-        hou.ui.displayMessage("Please only select two nodes.")
+    if len(sel) != 2:
+        hou.ui.displayMessage("Please select exactly two nodes.")
+
 
     # INITIALIZE VARIABLES
     node1 = sel[0]
     node2 = sel[1]
-    missing_list = []
-    different_list = []    
-    checked_list = []
 
     # COPY PARAMETERS
     copy(node1, node2)
